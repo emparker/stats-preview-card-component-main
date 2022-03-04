@@ -5,29 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link href="./dist/output.css" rel="stylesheet" >
 </head>
-<body>
 
-  Get insights that help your business grow.
+<body class='bg-very-drk-blue '>
+  <div class='grid max-w-md mx-auto md:max-w-2xl lg:max-w-full lg:grid-cols-2'>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <!-- <div class='w-96 mx-auto sm:max-w-xl lg:p-0'> -->
+      <div class='h-80 pb-0 overflow-hidden relative lg:hidden'>
+        <img class='absolute inset-0 rounded-t-lg h-full w-full object-cover object-center' src='./images/image-header-mobile.jpg' alt='board-meeting' />
+        <div class='absolute inset-0 bg-soft-violet rounded-t-lg bg-opacity-60'></div>
+      </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <div class='flex flex-col px-8 py-6 pt-8 bg-drk-blue-two rounded-b-lg lg:m-0'>
+        <div class='mb-6 text-center text-2xl font-bold tracking-wider text-white md:text-3xl'>
+          <p>Get <span class='text-soft-violet'>insights </span>that help your business grow.</p>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <p class='px-8 py-6 pt-0 text-center text-sm font-medium leading-relaxed text-white-transp md:text-lg md:font-light lg:text-sm lg:font-light'>
+          Discover the benefits of data analytics and make better decisions <br/> regarding revenue, customer 
+          experience, and overall efficiency.
+        </p>
+
+        <div class='grid grid-cols-1 gap-4 py-8 px-8 pt-0 text-center'>
+          <span class='text-white-transp-two font-light text-sm tracking-wide'><strong class='text-2xl font-bold text-white'>10k+</strong> <br/> COMPANIES</span>
+          <span class='text-white-transp-two font-light text-sm tracking-wide'><strong class='text-2xl font-bold text-white'>314</strong> <br/> TEMPLATES</span>
+          <span class='text-white-transp-two font-light text-sm tracking-wide'><strong class='text-2xl font-bold text-white'>12M+</strong> <br/> QUERIES</span>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    <div class='hidden lg:block'>
+      <img class='lg:mx-0 inset-0 object-cover h-full' src='./images/image-header-mobile.jpg' alt='board-meeting' />
+      <div class='lg:inset-0 bg-soft-violet bg-opacity-60'></div>
+    </div>
+
   </div>
 </body>
 </html>
